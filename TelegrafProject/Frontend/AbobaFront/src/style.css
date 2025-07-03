@@ -1,0 +1,8 @@
+﻿* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Или только для Element Plus */
+.el-button, .el-select, .el-header {
+    font-family: 'Roboto', sans-serif;
+}
