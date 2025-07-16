@@ -2,10 +2,18 @@
   <el-card style="margin: 20px; height: 100vh;" >
     <template #header>
       <div style="display: flex; align-items: center; justify-content: space-between">
-        <div>Статистика соединений</div>
-        <el-tooltip content="Закрыть">
-          <el-button @click="closeModal" :icon="CloseBold" type="primary"></el-button>
-        </el-tooltip>
+        <div style="display: flex; align-items: center">
+          <div style="margin-right: 10px">Статистика соединений.</div>
+          <div style="margin-right: 5px">Статус:</div>
+          <el-tag type="warning" style="margin-right: 10px">
+            В работе
+          </el-tag>
+        </div>
+        <div>
+          <el-tooltip content="Закрыть">
+            <el-button @click="closeModal" :icon="CloseBold" type="primary"></el-button>
+          </el-tooltip>
+        </div>
       </div>
     </template>
     <div style="
